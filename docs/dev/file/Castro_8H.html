@@ -25,7 +25,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"kth": "{{k_\\mathrm{th}}}", "gcc": "{\\mathrm{g~cm^{-3}}}", "cms": "{\\mathrm{cm~s^{-1}}}", "presunit": "{\\mathrm{dyn~cm^{-2}}}", "accelunit": "{\\mathrm{cm~s^{-2}}}", "ergg": "{\\mathrm{erg~g^{-1}}}", "Ab": "{{\\bf A}}", "eb": "{{\\bf e}}", "Fb": "{{\\bf F}}", "gb": "{{\\bf g}}", "Hb": "{{\\bf H}}", "ib": "{{\\bf i}}", "Ib": "{{\\bf I}}", "Kb": "{{\\bf K}}", "lb": "{{\\bf l}}", "Lb": "{{\\bf L}}", "nb": "{{\\bf n}}", "Pb": "{{\\bf P}}", "Qb": "{{\\bf Q}}", "rb": "{{\\bf r}}", "Rb": "{{\\bf R}}", "Sb": "{{\\bf S}}", "ub": "{{\\bf u}}", "Ub": "{{\\bf U}}", "xb": "{{\\bf x}}", "dt": "{\\Delta t}", "omegadot": "{\\dot\\omega}", "inp": "{{\\rm in}}", "outp": "{{\\rm out}}", "sync": "{{\\rm sync}}", "half": "{\\frac{1}{2}}", "myhalf": "{\\half}", "nph": "{{n+\\myhalf}}", "kpp": "{\\ensuremath{\\kappa_{\\mathrm{P}}}}", "kpr": "{\\ensuremath{\\kappa_{\\mathrm{R}}}}", "kpf": "{\\ensuremath{\\kappa_{\\mathrm{F}}}}", "vb": "{\\boldsymbol{v}}", "vbt": "{\\widetilde{\\vb}}", "rbt": "{\\widetilde{\\rb}}", "ob": "{\\boldsymbol{\\omega}}", "nablab": "{\\boldsymbol{\\nabla}}", "avg": ["{{\\left \\langle #1 \\right \\rangle}}", 1]}}})</script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
@@ -1774,16 +1774,6 @@
 <span class="target" id="classCastro_1a4e1556a32449cd5576c5c373f58c1350"></span><code class="sig-name descname">amrex::MultiFab dLogArea (\1\)</code></dt>
 <dd></dd></dl>
 
-<dl class="cpp function">
-<dt>
-<span class="target" id="classCastro_1aa25af2330c4023e1e88d4c43d59036f2"></span><code class="sig-name descname">amrex::Real material_lost_through_boundary_cumulative (\n_lost\)</code></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt>
-<span class="target" id="classCastro_1af18cb55a67616bcb8aeb58dd922daece"></span><code class="sig-name descname">amrex::Real material_lost_through_boundary_temp (\n_lost\)</code></dt>
-<dd></dd></dl>
-
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Protected Attributes</p>
@@ -2149,12 +2139,6 @@
 <dt id="_CPPv4N6Castro24lastDtBeforePlotLimitingE">
 <span id="_CPPv3N6Castro24lastDtBeforePlotLimitingE"></span><span id="_CPPv2N6Castro24lastDtBeforePlotLimitingE"></span><span id="Castro::lastDtBeforePlotLimiting__amrex::Real"></span><span class="target" id="classCastro_1a12581f946964d26a720e1bfb1868f39a"></span><a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Real <code class="sig-name descname">lastDtBeforePlotLimiting</code><br /></dt>
 <dd></dd></dl>
-
-<dl class="cpp var">
-<dt id="_CPPv4N6Castro6n_lostE">
-<span id="_CPPv3N6Castro6n_lostE"></span><span id="_CPPv2N6Castro6n_lostE"></span><span id="Castro::n_lost__iC"></span><span class="target" id="classCastro_1a1d8d1cdcaee43783ae6b665f05f3b16b"></span><em class="property">const</em> int <code class="sig-name descname">n_lost</code> = 8<br /></dt>
-<dd><p>For keeping track of fluid quantities lost at physical grid boundaries. This should persist through restarts, but right now only on level 0. </p>
-</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N6Castro19previousCPUTimeUsedE">
