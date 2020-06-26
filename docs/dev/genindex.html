@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,19 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -31,11 +37,6 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
@@ -52,7 +53,7 @@
 
 
           
-            <a href="index.html" class="icon icon-home"> Castro
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Castro
           
 
           
@@ -82,6 +83,7 @@
 
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -99,6 +101,7 @@
 <li class="toctree-l1"><a class="reference internal" href="mpi_plus_x.html">Running Options: CPUs and GPUs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FlowChart.html">Flowchart</a></li>
 <li class="toctree-l1"><a class="reference internal" href="software.html">Software Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem_setups.html">Distributed Problem Setups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="timestepping.html">Timestepping and Retries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_a_problem.html">Setting Up Your Own Problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="io.html">Outputting</a></li>
@@ -141,6 +144,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -179,7 +183,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Index</li>
     
@@ -306,7 +310,7 @@
 </li>
       <li><a href="file/Castro__hydro_8H.html#_CPPv412apply_av_radRKN5amrex3BoxEKiRKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEE">apply_av_rad (C++ function)</a>
 </li>
-      <li><a href="file/MGutils_8H.html#_CPPv412apply_metricRK3BoxK6Array4I4RealERK3BoxK6Array4I4RealERK3BoxK6Array4I4RealERK3BoxPK4RealKi">apply_metric (C++ function)</a>
+      <li><a href="file/MGutils_8H.html#_CPPv412apply_metricRK3BoxK6Array4I4RealERK3BoxK6Array4I4RealERK3BoxK6Array4I4RealERK3Box8GpuArrayI4Real14AMREX_SPACEDIMEKi">apply_metric (C++ function)</a>
 </li>
       <li><a href="file/Castro__sources_8H.html#_CPPv413apply_sourcesv">apply_sources (C++ function)</a>
 </li>
@@ -630,10 +634,6 @@
 </li>
       <li><a href="runtime_parameters.html#index-5">castro.rotation_include_coriolis</a>
 </li>
-      <li><a href="runtime_parameters.html#index-5">castro.rotation_include_domegadt</a>
-</li>
-      <li><a href="runtime_parameters.html#index-5">castro.rotational_dPdt</a>
-</li>
       <li><a href="runtime_parameters.html#index-5">castro.rotational_period</a>
 </li>
       <li><a href="runtime_parameters.html#index-8">castro.scf_equatorial_radius</a>
@@ -942,8 +942,6 @@
 </li>
       <li><a href="class/classCastro.html#_CPPv4N6Castro11mass_fluxesE">Castro::mass_fluxes (C++ member)</a>, <a href="file/Castro_8H.html#_CPPv4N6Castro11mass_fluxesE">[1]</a>
 </li>
-      <li><a href="class/classCastro.html#_CPPv4N6Castro12minBCThreadsEi">Castro::minBCThreads (C++ function)</a>, <a href="file/Castro_8H.html#_CPPv4N6Castro12minBCThreadsEi">[1]</a>
-</li>
       <li><a href="class/classCastro.html#_CPPv4N6Castro12no_tile_sizeE">Castro::no_tile_size (C++ member)</a>, <a href="file/Castro_8H.html#_CPPv4N6Castro12no_tile_sizeE">[1]</a>
 </li>
       <li><a href="class/classCastro.html#_CPPv4N6Castro12node_weightsE">Castro::node_weights (C++ member)</a>, <a href="file/Castro_8H.html#_CPPv4N6Castro12node_weightsE">[1]</a>
@@ -1142,8 +1140,6 @@
 </li>
       <li><a href="file/Castro__generic__fill_8H.html#_CPPv48clean_bcPi">clean_bc (C++ function)</a>
 </li>
-      <li><a href="file/Castro__generic__fill_8H.html#_CPPv422clean_bc_launch_configv">clean_bc_launch_config (C++ function)</a>
-</li>
       <li><a href="FlowChart.html#index-1">clean_state</a>
 </li>
       <li><a href="file/Castro__hydro_8H.html#_CPPv419cmpflx_plus_godunovRKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEEKi">cmpflx_plus_godunov (C++ function)</a>
@@ -1205,6 +1201,8 @@
       <li><a href="file/Castro__mhd_8H.html#_CPPv410consup_mhdRKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEE">consup_mhd (C++ function)</a>
 </li>
       <li><a href="file/Castro__mhd_8H.html#_CPPv413corner_coupleRKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEEKiKiKiKN5amrex4RealE">corner_couple (C++ function)</a>
+</li>
+      <li><a href="file/Castro__rotation_8H.html#_CPPv48corrrsrcRK3BoxRK6Array4IK4RealERK6Array4IK4RealERK6Array4IK4RealERK6Array4IK4RealERK6Array4IK4RealERK6Array4IK4RealERK6Array4I4RealERK6Array4IK4RealERK6Array4IK4RealERK6Array4IK4RealEK4RealRK6Array4IK4RealE">corrrsrc (C++ function)</a>
 </li>
       <li><a href="file/Castro__hydro_8H.html#_CPPv47ctoprimRKN5amrex3BoxEKN5amrex4RealERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEE">ctoprim (C++ function)</a>
 </li>
@@ -1284,11 +1282,11 @@
 </li>
       <li><a href="file/Castro__sdc_8H.html#_CPPv413do_sdc_updateiiN5amrex4RealE">do_sdc_update (C++ function)</a>
 </li>
-      <li><a href="file/MGutils_8H.html#_CPPv414do_unweight_ccRK3BoxK6Array4I4RealEPK4RealKi">do_unweight_cc (C++ function)</a>
+      <li><a href="file/MGutils_8H.html#_CPPv414do_unweight_ccRK3BoxK6Array4I4RealE8GpuArrayI4Real14AMREX_SPACEDIMEKi">do_unweight_cc (C++ function)</a>
 </li>
-      <li><a href="file/MGutils_8H.html#_CPPv417do_unweight_edgesRK3BoxK6Array4I4RealEKiPK4RealKi">do_unweight_edges (C++ function)</a>
+      <li><a href="file/MGutils_8H.html#_CPPv417do_unweight_edgesRK3BoxK6Array4I4RealEKi8GpuArrayI4Real14AMREX_SPACEDIMEKi">do_unweight_edges (C++ function)</a>
 </li>
-      <li><a href="file/MGutils_8H.html#_CPPv412do_weight_ccRK3BoxK6Array4I4RealEPK4RealKi">do_weight_cc (C++ function)</a>
+      <li><a href="file/MGutils_8H.html#_CPPv412do_weight_ccRK3BoxK6Array4I4RealE8GpuArrayI4Real14AMREX_SPACEDIMEKi">do_weight_cc (C++ function)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -1316,7 +1314,9 @@
 </li>
       <li><a href="EOSNetwork.html#index-1">eos_xderivs_t</a>
 </li>
-      <li><a href="file/Castro__sources_8H.html#_CPPv422evaluate_source_changeRN5amrex8MultiFabEN5amrex4RealEb">evaluate_source_change (C++ function)</a>
+      <li><a href="file/Castro__sources_8H.html#_CPPv432evaluate_and_print_source_changeRKN5amrex8MultiFabEN5amrex4RealENSt6stringE">evaluate_and_print_source_change (C++ function)</a>
+</li>
+      <li><a href="file/Castro__sources_8H.html#_CPPv422evaluate_source_changeRKN5amrex8MultiFabEN5amrex4RealEb">evaluate_source_change (C++ function)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -1330,14 +1330,20 @@
 </li>
       <li><a href="file/Castro__rotation_8H.html#_CPPv419fill_rotation_fieldRN5amrex8MultiFabERN5amrex8MultiFabERN5amrex8MultiFabEN5amrex4RealE">fill_rotation_field (C++ function)</a>
 </li>
+      <li><a href="file/Castro__rotation_8H.html#_CPPv428fill_rotational_accelerationRK3BoxRK6Array4I4RealERK6Array4IK4RealE">fill_rotational_acceleration (C++ function)</a>
+</li>
+      <li><a href="file/Castro__rotation_8H.html#_CPPv425fill_rotational_potentialRK3BoxRK6Array4I4RealEK4Real">fill_rotational_potential (C++ function)</a>
+</li>
+      <li><a href="file/Castro__rotation_8H.html#_CPPv419fill_rotational_psiRK3BoxRK6Array4I4RealEK4Real">fill_rotational_psi (C++ function)</a>
+</li>
       <li><a href="file/diffusion__util_8H.html#_CPPv414fill_temp_condRKN5amrex3BoxERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEE">fill_temp_cond (C++ function)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="file/diffusion__util_8H.html#_CPPv420fill_temp_diff_coeffRKN5amrex3BoxERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEE">fill_temp_diff_coeff (C++ function)</a>
 </li>
       <li><a href="file/Castro__sources_8H.html#_CPPv418fill_thermo_sourceN5amrex4RealEN5amrex4RealERN5amrex8MultiFabERN5amrex8MultiFabE">fill_thermo_source (C++ function)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="file/Castro_8H.html#_CPPv48FirstAdv">FirstAdv (C++ member)</a>
 </li>
       <li><a href="file/Castro_8H.html#_CPPv48FirstAux">FirstAux (C++ member)</a>
@@ -1545,6 +1551,8 @@
       <li><a href="class/classGravity.html#_CPPv4N7Gravity24test_level_grad_phi_currEi">Gravity::test_level_grad_phi_curr (C++ function)</a>, <a href="file/Gravity_8H.html#_CPPv4N7Gravity24test_level_grad_phi_currEi">[1]</a>
 </li>
       <li><a href="class/classGravity.html#_CPPv4N7Gravity24test_level_grad_phi_prevEi">Gravity::test_level_grad_phi_prev (C++ function)</a>, <a href="file/Gravity_8H.html#_CPPv4N7Gravity24test_level_grad_phi_prevEi">[1]</a>
+</li>
+      <li><a href="class/classGravity.html#_CPPv4N7Gravity13test_residualERKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEi">Gravity::test_residual (C++ function)</a>, <a href="file/Gravity_8H.html#_CPPv4N7Gravity13test_residualERKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEi">[1]</a>
 </li>
       <li><a href="class/classGravity.html#_CPPv4N7Gravity22test_results_of_solvesEv">Gravity::test_results_of_solves (C++ function)</a>, <a href="file/Gravity_8H.html#_CPPv4N7Gravity22test_results_of_solvesEv">[1]</a>
 </li>
@@ -1838,7 +1846,7 @@
 </li>
       <li><a href="class/classMGRadBndryBld.html#_CPPv4NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE">MGRadBndryBld::operator() (C++ function)</a>, <a href="file/MGRadBndry_8H.html#_CPPv4NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE">[1]</a>
 </li>
-      <li><a href="file/Castro__hydro_8H.html#_CPPv410mol_consupRKN5amrex3BoxERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEEKN5amrex4RealERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEE">mol_consup (C++ function)</a>
+      <li><a href="file/Castro__hydro_8H.html#_CPPv410mol_consupRKN5amrex3BoxERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEEKN5amrex4RealERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEE">mol_consup (C++ function)</a>
 </li>
       <li><a href="file/Castro__hydro_8H.html#_CPPv418mol_diffusive_fluxRKN5amrex3BoxEKiRKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEE">mol_diffusive_flux (C++ function)</a>
 </li>
@@ -2400,6 +2408,8 @@
 </li>
       <li><a href="file/Castro__hydro_8H.html#_CPPv49riemannusRKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEEKiKi">riemannus (C++ function)</a>
 </li>
+      <li><a href="file/Castro__rotation_8H.html#_CPPv44rsrcRK3BoxRK6Array4IK4RealERK6Array4IK4RealERK6Array4I4RealEK4Real">rsrc (C++ function)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -2409,8 +2419,6 @@
       <li><a href="file/Castro__hydro_8H.html#_CPPv410scale_fluxRKN5amrex3BoxERKN5amrex6Array4IKN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEEKN5amrex4RealE">scale_flux (C++ function)</a>
 </li>
       <li><a href="file/Castro__hydro_8H.html#_CPPv414scale_rad_fluxRKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IKN5amrex4RealEEEKN5amrex4RealE">scale_rad_flux (C++ function)</a>
-</li>
-      <li><a href="file/Castro__generic__fill_8H.html#_CPPv420set_bc_launch_configv">set_bc_launch_config (C++ function)</a>
 </li>
       <li><a href="build_system.html#index-17">set_variables.py</a>
 </li>
@@ -2456,10 +2464,10 @@
 </li>
       <li><a href="file/sponge__params_8H.html#_CPPv421sponge_lower_pressure">sponge_lower_pressure (C++ member)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="file/sponge__params_8H.html#_CPPv419sponge_lower_radius">sponge_lower_radius (C++ member)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="sponge.html#index-0">sponge_timescale</a>
 
       <ul>
@@ -2701,11 +2709,19 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2018-2020, Castro development tem
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -2716,7 +2732,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

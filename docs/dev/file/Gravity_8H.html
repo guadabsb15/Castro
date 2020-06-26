@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,19 @@
   
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -31,11 +37,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Hydro" href="../hydro_files.html" />
@@ -54,7 +55,7 @@
 
 
           
-            <a href="../index.html" class="icon icon-home"> Castro
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Castro
           
 
           
@@ -84,6 +85,7 @@
 
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -101,6 +103,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../mpi_plus_x.html">Running Options: CPUs and GPUs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../FlowChart.html">Flowchart</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem_setups.html">Distributed Problem Setups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../timestepping.html">Timestepping and Retries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../creating_a_problem.html">Setting Up Your Own Problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../io.html">Outputting</a></li>
@@ -162,6 +165,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -200,7 +204,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="../filelist.html">File list</a> &raquo;</li>
         
@@ -574,6 +578,24 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">level</span></code>: Level index </p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">grav_vector</span></code>: MultiFab containing gravity vector </p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">time</span></code>: Current time </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N7Gravity13test_residualERKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEi">
+<span id="_CPPv3N7Gravity13test_residualERKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEi"></span><span id="_CPPv2N7Gravity13test_residualERKN5amrex3BoxERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEERKN5amrex6Array4IN5amrex4RealEEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEN5amrex8GpuArrayIN5amrex4RealE14AMREX_SPACEDIMEEi"></span><span id="Gravity::test_residual__amrex::BoxCR.amrex::Array4:amrex::Real:CR.amrex::Array4:amrex::Real:CR.amrex::Array4:amrex::Real:CR.amrex::Array4:amrex::Real:CR.amrex::GpuArray:amrex::Real.AMREX_SPACEDIM:.amrex::GpuArray:amrex::Real.AMREX_SPACEDIM:.i"></span><span class="target" id="classGravity_1a1f5722b41d2a8021f2c7d044f21cb6b1"></span>void <code class="sig-name descname">test_residual</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Box &amp;<em>bx</em>, <a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Array4&lt;<a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Real&gt; <em class="property">const</em> &amp;<em>rhs</em>, <a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Array4&lt;<a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Real&gt; <em class="property">const</em> &amp;<em>ecx</em>, <a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Array4&lt;<a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Real&gt; <em class="property">const</em> &amp;<em>ecy</em>, <a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Array4&lt;<a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Real&gt; <em class="property">const</em> &amp;<em>ecz</em>, <a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::GpuArray&lt;<a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Real, AMREX_SPACEDIM&gt; <em>dx</em>, <a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::GpuArray&lt;<a class="reference internal" href="Castro__util_8H.html#_CPPv45amrex" title="amrex">amrex</a>::Real, AMREX_SPACEDIM&gt; <em>problo</em>, int <em>coord_type</em><span class="sig-paren">)</span><br /></dt>
+<dd><p>Test whether using the edge-based gradients to compute Div(Grad(Phi)) satisfies Lap(phi) = RHS</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">bx</span></code>: box </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rhs</span></code>: right-hand-side </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecx</span></code>: gradients wrt x </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecy</span></code>: gradients wrt y </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecz</span></code>: gradients wrt z </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">coord_type</span></code>: coordinate system </p></li>
 </ul>
 </dd>
 </dl>
@@ -1048,11 +1070,19 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2018-2020, Castro development tem
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -1063,7 +1093,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
