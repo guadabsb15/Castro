@@ -1,77 +1,40 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Flowchart &mdash; Castro  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"kth": "{{k_\\mathrm{th}}}", "gcc": "{\\mathrm{g~cm^{-3}}}", "cms": "{\\mathrm{cm~s^{-1}}}", "presunit": "{\\mathrm{dyn~cm^{-2}}}", "accelunit": "{\\mathrm{cm~s^{-2}}}", "ergg": "{\\mathrm{erg~g^{-1}}}", "Ab": "{{\\bf A}}", "eb": "{{\\bf e}}", "Fb": "{{\\bf F}}", "gb": "{{\\bf g}}", "Hb": "{{\\bf H}}", "ib": "{{\\bf i}}", "Ib": "{{\\bf I}}", "Kb": "{{\\bf K}}", "lb": "{{\\bf l}}", "Lb": "{{\\bf L}}", "nb": "{{\\bf n}}", "Pb": "{{\\bf P}}", "Qb": "{{\\bf Q}}", "rb": "{{\\bf r}}", "Rb": "{{\\bf R}}", "Sb": "{{\\bf S}}", "ub": "{{\\bf u}}", "Ub": "{{\\bf U}}", "xb": "{{\\bf x}}", "dt": "{\\Delta t}", "omegadot": "{\\dot\\omega}", "inp": "{{\\rm in}}", "outp": "{{\\rm out}}", "sync": "{{\\rm sync}}", "half": "{\\frac{1}{2}}", "myhalf": "{\\half}", "nph": "{{n+\\myhalf}}", "kpp": "{\\ensuremath{\\kappa_{\\mathrm{P}}}}", "kpr": "{\\ensuremath{\\kappa_{\\mathrm{R}}}}", "kpf": "{\\ensuremath{\\kappa_{\\mathrm{F}}}}", "vb": "{\\boldsymbol{v}}", "vbt": "{\\widetilde{\\vb}}", "rbt": "{\\widetilde{\\rb}}", "ob": "{\\boldsymbol{\\omega}}", "nablab": "{\\boldsymbol{\\nabla}}", "avg": ["{{\\left \\langle #1 \\right \\rangle}}", 1]}}})</script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
+        <script>window.MathJax = {"tex": {"macros": {"kth": "{{k_\\mathrm{th}}}", "gcc": "{\\mathrm{g~cm^{-3}}}", "cms": "{\\mathrm{cm~s^{-1}}}", "presunit": "{\\mathrm{dyn~cm^{-2}}}", "accelunit": "{\\mathrm{cm~s^{-2}}}", "ergg": "{\\mathrm{erg~g^{-1}}}", "Ab": "{{\\bf A}}", "eb": "{{\\bf e}}", "Fb": "{{\\bf F}}", "gb": "{{\\bf g}}", "Hb": "{{\\bf H}}", "ib": "{{\\bf i}}", "Ib": "{{\\bf I}}", "Kb": "{{\\bf K}}", "lb": "{{\\bf l}}", "Lb": "{{\\bf L}}", "nb": "{{\\bf n}}", "Pb": "{{\\bf P}}", "Qb": "{{\\bf Q}}", "rb": "{{\\bf r}}", "Rb": "{{\\bf R}}", "Sb": "{{\\bf S}}", "ub": "{{\\bf u}}", "Ub": "{{\\bf U}}", "xb": "{{\\bf x}}", "dt": "{\\Delta t}", "omegadot": "{\\dot\\omega}", "inp": "{{\\rm in}}", "outp": "{{\\rm out}}", "sync": "{{\\rm sync}}", "half": "{\\frac{1}{2}}", "myhalf": "{\\half}", "nph": "{{n+\\myhalf}}", "kpp": "{\\ensuremath{\\kappa_{\\mathrm{P}}}}", "kpr": "{\\ensuremath{\\kappa_{\\mathrm{R}}}}", "kpf": "{\\ensuremath{\\kappa_{\\mathrm{F}}}}", "vb": "{\\boldsymbol{v}}", "vbt": "{\\widetilde{\\vb}}", "rbt": "{\\widetilde{\\rb}}", "ob": "{\\boldsymbol{\\omega}}", "nablab": "{\\boldsymbol{\\nabla}}", "avg": ["{{\\left \\langle #1 \\right \\rangle}}", 1]}}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Software Design" href="software.html" />
     <link rel="prev" title="Running Options: CPUs and GPUs" href="mpi_plus_x.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
-
-          
             <a href="index.html" class="icon icon-home"> Castro
-          
-
-          
-            
             <img src="_static/castro_logo_hot_200.png" class="logo" alt="Logo"/>
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -79,23 +42,12 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
     <div class="branch">
         Branch: <a href="../FlowChart.html">main</a> | <a href="./FlowChart.html">development</a>
     </div>
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Castro basics</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Castro basics</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Preface.html">Preface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction to Castro</a></li>
@@ -129,12 +81,12 @@
 <li class="toctree-l1"><a class="reference internal" href="visualization.html">Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Castro reference</span></p>
+<p class="caption" role="heading"><span class="caption-text">Castro reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="build_system.html">Build System Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gpu_porting.html">Offloading a routine to GPU</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Hydrodynamics.html">Hydrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hse.html">Hydrostatic Equilibrium</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mhd.html">MHD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gravity.html">Gravity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="diffusion.html">Diffusion</a></li>
@@ -151,85 +103,44 @@
 <li class="toctree-l1"><a class="reference internal" href="Verification.html">Verification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="development.html">Development Best Practices</a></li>
 </ul>
-<p class="caption"><span class="caption-text">API</span></p>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="filelist.html">File list</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classlist.html">Class list</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References</span></p>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="zreferences.html">References</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Castro</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Flowchart</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="_sources/FlowChart.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="flowchart">
-<h1>Flowchart<a class="headerlink" href="#flowchart" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+             
+  <section id="flowchart">
+<h1>Flowchart<a class="headerlink" href="#flowchart" title="Permalink to this heading">¶</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>There are several different time-evolution methods currently
 implemented in Castro. As best as possible, they share the same
 driver routines and use preprocessor or runtime variables to separate
@@ -240,7 +151,7 @@ state for <span class="math notranslate nohighlight">\(\Delta t/2\)</span>, then
 burned state, and then does the final <span class="math notranslate nohighlight">\(\Delta t/2\)</span> burning. No
 explicit coupling of the burning and hydro is done.  This code
 path uses the corner-transport upwind (CTU) method (the unsplit,
-characteristic tracing method of <span id="id1">[<a class="reference internal" href="zreferences.html#id12">20</a>]</span>).  This is the default method.</p>
+characteristic tracing method of <span id="id1">[<a class="reference internal" href="zreferences.html#id12" title="P. Colella. Multidimensional upwind methods for hyperbolic conservation laws. Journal of Computational Physics, 87:171-200, March 1990. doi:10.1016/0021-9991(90)90233-Q.">24</a>]</span>).  This is the default method.</p>
 <p>The MHD solver uses this same driver.</p>
 </li>
 <li><p>SDC: a class of iterative methods that couples the advection and reactions
@@ -258,7 +169,7 @@ to either 2nd or 4th order.  This approximates the integral in
 time using a simple quadrature rule, and integrates the hydro
 explicitly and reactions implicitly to the next time node.
 Iterations allow each process to see one another and achieve
-high-order in time convergence.  This is described in <span id="id2">[<a class="reference internal" href="zreferences.html#id49">66</a>]</span>.</p></li>
+high-order in time convergence.  This is described in <span id="id2">[<a class="reference internal" href="zreferences.html#id49" title="M. Zingale, M. P. Katz, J. B. Bell, M. L. Minion, A. J. Nonaka, and W. Zhang. Improved Coupling of Hydrodynamics and Nuclear Reactions via Spectral Deferred Corrections. \apj , 886(2):105, Dec 2019. arXiv:1908.03661, doi:10.3847/1538-4357/ab4e1d.">71</a>]</span>.</p></li>
 </ul>
 </li>
 </ul>
@@ -267,7 +178,7 @@ high-order in time convergence.  This is described in <span id="id2">[<a class="
 <blockquote>
 <div><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">time_integration_method</span> <span class="pre">=</span> <span class="pre">0</span></code>: this is the original Castro method,
-described in <span id="id3">[<a class="reference internal" href="zreferences.html#id4">12</a>]</span>.  This uses Strang splitting and the CTU
+described in <span id="id3">[<a class="reference internal" href="zreferences.html#id4" title="A. S. Almgren, V. E. Beckner, J. B. Bell, M. S. Day, L. H. Howell, C. C. Joggerst, M. J. Lijewski, A. Nonaka, M. Singer, and M. Zingale. CASTRO: A New Compressible Astrophysical Solver. I. Hydrodynamics and Self-gravity. ApJ, 715:1221-1238, June 2010. doi:10.1088/0004-637X/715/2/1221.">16</a>]</span>.  This uses Strang splitting and the CTU
 hydrodynamics scheme.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">time_integration_method</span> <span class="pre">=</span> <span class="pre">1</span></code>: unused (in Castro 19.08 and
 earlier, this was a method-of-lines integration method with Strang
@@ -283,7 +194,7 @@ additional EOS derivatives).</p></li>
 described above that uses the CTU hydro advection and an ODE
 reaction solve.  Note: because this requires a different set of
 state variables, you must compile with <code class="docutils literal notranslate"><span class="pre">USE_SIMPLIFIED_SDC</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> for this
-method to work (in particular, this defines <code class="docutils literal notranslate"><span class="pre">PRIM_SPECIES_HAVE_SOURCES</span></code>).</p></li>
+method to work.</p></li>
 </ul>
 </div></blockquote>
 <div class="admonition note" id="index-1">
@@ -318,9 +229,9 @@ consistent with the state.</p></li>
 </ol>
 </li>
 </ul>
-</div>
-<div class="section" id="main-driverall-time-integration-methods">
-<span id="flow-sec-nosdc"></span><h2>Main Driver—All Time Integration Methods<a class="headerlink" href="#main-driverall-time-integration-methods" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="main-driverall-time-integration-methods">
+<span id="flow-sec-nosdc"></span><h2>Main Driver—All Time Integration Methods<a class="headerlink" href="#main-driverall-time-integration-methods" title="Permalink to this heading">¶</a></h2>
 <p>This driver supports the Strang CTU integration.
 (<code class="docutils literal notranslate"><span class="pre">castro.time_integration_method</span></code> = 0)</p>
 <p>The main evolution for a single step is contained in
@@ -335,7 +246,6 @@ of each step.</p>
 actions are performend (note, we omit the actions taken for a retry,
 which we will describe later):</p>
 <ul class="simple">
-<li><p>Sync up the level information to the Fortran-side of Castro.</p></li>
 <li><p>Do any radiation initialization.</p></li>
 <li><p>Set the maximum density used for Poisson gravity tolerances.</p></li>
 <li><p>Initialize all of the intermediate storage arrays (like those
@@ -418,9 +328,9 @@ the step.</p></li>
 </ul>
 </li>
 </ol>
-</div>
-<div class="section" id="strang-ctu-evolution">
-<span id="sec-strangctu"></span><h2>Strang+CTU Evolution<a class="headerlink" href="#strang-ctu-evolution" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="strang-ctu-evolution">
+<span id="sec-strangctu"></span><h2>Strang+CTU Evolution<a class="headerlink" href="#strang-ctu-evolution" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">do_advance_ctu()</span></code> in <code class="docutils literal notranslate"><span class="pre">Castro_advance_ctu.cpp</span></code></p>
 <p>This described the flow using Strang splitting and the CTU
 hydrodynamics (or MHD) method, including gravity, rotation, and
@@ -485,20 +395,14 @@ reconstruction will work from.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">old_source</span></code> is a MultiFab reference to the old-time-level <code class="docutils literal notranslate"><span class="pre">Source_Type</span></code> data.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">new_source</span></code> is a MultiFab reference to the new-time-level <code class="docutils literal notranslate"><span class="pre">Source_Type</span></code> data.</p></li>
 </ul>
-<div class="section" id="single-step-flowchat">
-<h3>Single Step Flowchat<a class="headerlink" href="#single-step-flowchat" title="Permalink to this headline">¶</a></h3>
+<section id="single-step-flowchat">
+<h3>Single Step Flowchat<a class="headerlink" href="#single-step-flowchat" title="Permalink to this heading">¶</a></h3>
 <p>In the code, the objective is to evolve the state from the old time,
 <code class="docutils literal notranslate"><span class="pre">S_old</span></code>, to the new time, <code class="docutils literal notranslate"><span class="pre">S_new</span></code>.</p>
 <ol class="arabic">
 <li><p><em>Initialize</em></p>
-<ol class="upperalpha">
+<ol class="upperalpha simple">
 <li><p>In <code class="docutils literal notranslate"><span class="pre">initialize_do_advance()</span></code>, create <code class="docutils literal notranslate"><span class="pre">Sborder</span></code>, initialized from <code class="docutils literal notranslate"><span class="pre">S_old</span></code></p></li>
-<li><p>If <code class="docutils literal notranslate"><span class="pre">source_term_predictor</span> <span class="pre">==</span> <span class="pre">1</span></code>, then aply
-<code class="docutils literal notranslate"><span class="pre">source_corrector</span></code> to <code class="docutils literal notranslate"><span class="pre">sources_for_hydro</span></code>.  For Strang+CTU,
-this was the effect of initializing the source terms as:</p>
-<div class="math notranslate nohighlight">
-\[\Sb = \frac{dt}{2} (d\Sb/dt)^{n-1/2}\]</div>
-</li>
 <li><p>Check for NaNs in the initial state, <code class="docutils literal notranslate"><span class="pre">S_old</span></code>.</p></li>
 </ol>
 </li>
@@ -514,8 +418,8 @@ temperature through <span class="math notranslate nohighlight">\(\Delta t/2\)</s
 <span class="math notranslate nohighlight">\(\Ub^\star\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-    (\rho e)^\star &amp;= (\rho e)^n - \frac{\dt}{2} \rho H_\mathrm{nuc} \\
-    (\rho E)^\star &amp;= (\rho E)^n - \frac{\dt}{2} \rho H_\mathrm{nuc} \\
+    (\rho e)^\star &amp;= (\rho e)^n + \frac{\dt}{2} \rho H_\mathrm{nuc} \\
+    (\rho E)^\star &amp;= (\rho E)^n + \frac{\dt}{2} \rho H_\mathrm{nuc} \\
     (\rho X_k)^\star &amp;= (\rho X_k)^n + \frac{\dt}{2}(\rho\omegadot_k).
   \end{aligned}\end{split}\]</div>
 <p>Here, <span class="math notranslate nohighlight">\(H_\mathrm{nuc}\)</span> is the energy release (erg/g/s) over the
@@ -539,11 +443,11 @@ StateData <code class="docutils literal notranslate"><span class="pre">Source_Ty
 <li><p>sponge : the sponge is a damping term added to
 the momentum equation that is designed to drive the velocities to
 zero over some timescale. Our implementation of the sponge
-follows that of Maestro <span id="id4">[<a class="reference internal" href="zreferences.html#id9">13</a>]</span></p></li>
+follows that of Maestro <span id="id4">[<a class="reference internal" href="zreferences.html#id9" title="A. S. Almgren, J. B. Bell, A. Nonaka, and M. Zingale. Low Mach Number Modeling of Type Ia Supernovae. III. Reactions. ApJ, 684:449-470, September 2008. doi:10.1086/590321.">17</a>]</span></p></li>
 <li><p>external sources : users can define problem-specific sources
-in the <code class="docutils literal notranslate"><span class="pre">ext_src_?d.f90</span></code> file. Sources for the different
+in the <code class="docutils literal notranslate"><span class="pre">problem_source.H</span></code> file. Sources for the different
 equations in the conservative state vector, <span class="math notranslate nohighlight">\(\Ub\)</span>, are indexed
-using the integer keys defined in <code class="docutils literal notranslate"><span class="pre">meth_params_module</span></code>
+using the integer keys defined in <code class="docutils literal notranslate"><span class="pre">state_indices.H</span></code>
 (e.g., URHO).</p>
 <p>This is most commonly used for external heat sources (see the
 <code class="docutils literal notranslate"><span class="pre">toy_convect</span></code> problem setup) for an example. But most
@@ -765,10 +669,10 @@ these processes is presented below:</p>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="section" id="sdc-evolution">
-<span id="sec-flow-true-sdc"></span><h2>SDC Evolution<a class="headerlink" href="#sdc-evolution" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="sdc-evolution">
+<span id="sec-flow-true-sdc"></span><h2>SDC Evolution<a class="headerlink" href="#sdc-evolution" title="Permalink to this heading">¶</a></h2>
 <p>The SDC evolution is selected by <code class="docutils literal notranslate"><span class="pre">castro.time_integration_method</span> <span class="pre">=</span> <span class="pre">2</span></code>.  It
 does away with Strang splitting and instead couples the reactions and hydro
 together directly.</p>
@@ -782,7 +686,7 @@ simulation.</p>
 <p>The code must be compiled with <code class="docutils literal notranslate"><span class="pre">USE_TRUE_SDC</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> to use this
 evolution type.</p>
 </div>
-<p>The SDC solver follows the algorithm detailed in <span id="id6">[]</span>.
+<p>The SDC solver follows the algorithm detailed in <span id="id6">[<a class="reference internal" href="zreferences.html#id49" title="M. Zingale, M. P. Katz, J. B. Bell, M. L. Minion, A. J. Nonaka, and W. Zhang. Improved Coupling of Hydrodynamics and Nuclear Reactions via Spectral Deferred Corrections. \apj , 886(2):105, Dec 2019. arXiv:1908.03661, doi:10.3847/1538-4357/ab4e1d.">71</a>]</span>.
 We write our evolution equation as:</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial \Ub}{\partial t} = {\bf A}(\Ub) + {\bf R}(\Ub)\]</div>
@@ -892,8 +796,8 @@ all the time nodes for a single iteration.</p>
 <p>This clears the <code class="docutils literal notranslate"><span class="pre">MultiFab</span></code> s we allocated.</p>
 </li>
 </ol>
-<div class="section" id="sdc-single-iteration-flowchart">
-<h3>SDC Single Iteration Flowchart<a class="headerlink" href="#sdc-single-iteration-flowchart" title="Permalink to this headline">¶</a></h3>
+<section id="sdc-single-iteration-flowchart">
+<h3>SDC Single Iteration Flowchart<a class="headerlink" href="#sdc-single-iteration-flowchart" title="Permalink to this heading">¶</a></h3>
 <p id="index-6">The update through all time nodes for a single iteration is done by
 <code class="docutils literal notranslate"><span class="pre">do_advance_sdc</span></code>.  The basic update appears as:</p>
 <p>Throughout this driver we use the <code class="docutils literal notranslate"><span class="pre">State_Type</span></code> <code class="docutils literal notranslate"><span class="pre">StateData</span></code> as
@@ -925,7 +829,6 @@ iteration.</p>
 <li><p>Call <code class="docutils literal notranslate"><span class="pre">do_old_sources</span></code> filling the <code class="docutils literal notranslate"><span class="pre">Source_Type</span></code>
 <code class="docutils literal notranslate"><span class="pre">StateData</span></code>, <code class="docutils literal notranslate"><span class="pre">old_source</span></code>.</p></li>
 <li><p>Convert the sources to 4th order averages if needed.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">sources_for_hydro</span></code> <span class="math notranslate nohighlight">\(\leftarrow\)</span> <code class="docutils literal notranslate"><span class="pre">old_source</span></code></p></li>
 <li><p>Convert the conserved variables to primitive variables</p></li>
 <li><p>Call <code class="docutils literal notranslate"><span class="pre">construct_mol_hydro_source</span></code> to get the advective update
 at the current time node, stored in <code class="docutils literal notranslate"><span class="pre">A_new[m]</span></code>.</p></li>
@@ -967,10 +870,10 @@ time node.</p>
 </li>
 <li><p>Call <code class="docutils literal notranslate"><span class="pre">finalize_do_advance</span></code> to clean up the memory.</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="simplified-sdc-evolution">
-<h2>Simplified-SDC Evolution<a class="headerlink" href="#simplified-sdc-evolution" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="simplified-sdc-evolution">
+<h2>Simplified-SDC Evolution<a class="headerlink" href="#simplified-sdc-evolution" title="Permalink to this heading">¶</a></h2>
 <p>The simplified SDC method uses the CTU advection solver together with
 an ODE solution to update the compute advective-reacting system.  This
 is selected by <code class="docutils literal notranslate"><span class="pre">castro.time_integration_method</span> <span class="pre">=</span> <span class="pre">3</span></code>.</p>
@@ -996,8 +899,8 @@ step now proceeds as a loop over <code class="docutils literal notranslate"><spa
 with the Strang CTU version are highlighted below.</p>
 <p>Note that the
 radiation implicit update is not done as part of the Simplified-SDC iterations.</p>
-<div class="section" id="simplified-sdc-hydro-advance">
-<h3>Simplified_SDC Hydro Advance<a class="headerlink" href="#simplified-sdc-hydro-advance" title="Permalink to this headline">¶</a></h3>
+<section id="simplified-sdc-hydro-advance">
+<h3>Simplified_SDC Hydro Advance<a class="headerlink" href="#simplified-sdc-hydro-advance" title="Permalink to this heading">¶</a></h3>
 <p>The evolution in <code class="docutils literal notranslate"><span class="pre">do_advance</span></code> is substantially different than the
 Strang case. In particular, reactions are not evolved. Here we
 summarize those differences.</p>
@@ -1074,56 +977,39 @@ next iteration to approximate the time-centered source term.</p>
 <dd><p>The correction for gravity is slightly different since we directly compute the time-centered gravitational source term using the hydrodynamic fluxes.</p>
 </dd>
 </dl>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="software.html" class="btn btn-neutral float-right" title="Software Design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="mpi_plus_x.html" class="btn btn-neutral float-left" title="Running Options: CPUs and GPUs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="software.html" class="btn btn-neutral float-right" title="Software Design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2018-2020, Castro development tem.
-
-    </p>
+    <p>&#169; Copyright 2018-2022, Castro development team.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-    
+  </script>  
 
 
 </body>
