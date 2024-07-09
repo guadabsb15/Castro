@@ -9,9 +9,10 @@ we are not interested in the dynamics, to prevent them from
 dominating the timestep constraint.  Often these are buffer regions
 between the domain of interest and the boundary conditions.
 
-The sponge parameters are set in your ``probin`` file, in the
-``&sponge`` namelist.  The timescale of the damping is set through
-``sponge_timescale``.
+The sponge parameters are set in the inputs file. The timescale of the
+damping is set through ``castro.sponge_timescale``, while factors such as
+the radius/density/pressure at which the sponge starts to begin being applied
+are described below.
 
 The sponge value, :math:`f_\mathrm{sponge}` is computed as described below
 and then the sponge factor, :math:`f` is computed as:
@@ -60,7 +61,7 @@ There are three sponges, each controlled by different runtime parameters:
                      f_\mathrm{lower}   & r < r_\mathrm{lower} \\
                      f_\mathrm{lower} + \frac{f_\mathrm{upper} - f_\mathrm{lower}}{2}
                           \left [ 1 - \cos \left ( \frac{\pi (r - r_\mathrm{lower})}{\Delta r} \right ) \right ]  & r_\mathrm{lower} \le r < r_\mathrm{upper} \\
-                     f_\mathrm{upper} & r \ge r_\mathrm{upper} 
+                     f_\mathrm{upper} & r \ge r_\mathrm{upper}
              \end{array} \right .
 
 
@@ -88,7 +89,7 @@ There are three sponges, each controlled by different runtime parameters:
                      f_\mathrm{lower}   & \rho > \rho_\mathrm{upper} \\
                      f_\mathrm{lower} + \frac{f_\mathrm{upper} - f_\mathrm{lower}}{2}
                           \left [ 1 - \cos \left ( \frac{\pi (\rho - \rho_\mathrm{upper})}{\Delta \rho} \right ) \right ]  & \rho_\mathrm{upper} \ge \rho > \rho_\mathrm{lower} \\
-                     f_\mathrm{upper} & \rho < \rho_\mathrm{lower} 
+                     f_\mathrm{upper} & \rho < \rho_\mathrm{lower}
              \end{array} \right .
 
 
@@ -114,7 +115,7 @@ There are three sponges, each controlled by different runtime parameters:
                      f_\mathrm{lower}   & p > p_\mathrm{upper} \\
                      f_\mathrm{lower} + \frac{f_\mathrm{upper} - f_\mathrm{lower}}{2}
                           \left [ 1 - \cos \left ( \frac{\pi (p - p_\mathrm{upper})}{\Delta p} \right ) \right ]  & p_\mathrm{upper} \ge p \ge p_\mathrm{lower} \\
-                     f_\mathrm{upper} & \rho < \rho_\mathrm{lower} 
+                     f_\mathrm{upper} & \rho < \rho_\mathrm{lower}
              \end{array} \right .
 
 
