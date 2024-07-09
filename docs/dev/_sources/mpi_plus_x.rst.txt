@@ -4,7 +4,7 @@
 Running Options: CPUs and GPUs
 ******************************
 
-Castro uses MPI for coarse parallelization, distributing boxs across
+Castro uses MPI for coarse parallelization, distributing boxes across
 compute nodes.  For fine-grained parallelism, OpenMP is used for
 CPU-based computing and CUDA is used for GPUs.
 
@@ -95,6 +95,29 @@ To enable this, compile with::
   USE_OMP = FALSE
   USE_CUDA = TRUE
 
+.. note::
+
+   For recent GPUs, like the NVIDIA RTX 4090, you may need to change
+   the default CUDA architecture.  This can be done by adding:
+
+   .. code::
+
+      CUDA_ARCH=89
+
+   to the ``make`` line or ``GNUmakefile``.
+
+.. note::
+
+   CUDA 11.2 and later can do link time optimization.  This can
+   increase performance by 10-30% (depending on the application), but
+   may greatly increase the compilation time.  This is disabled by
+   default.  To enable link time optimization, add:
+
+   .. code::
+
+      CUDA_LTO=TRUE
+
+   to the ``make`` line of ``GNUmakefile``.
 
 AMD GPUs
 --------
@@ -107,15 +130,9 @@ To enable this, compile with::
   USE_HIP = TRUE
 
 
-.. note::
-
-   AMD + HIP support is new and considered experimental.
-
-
 Working at Supercomputing Centers
 =================================
 
 Our best practices for running any of the AMReX Astrophysics codes
 at different supercomputing centers is produced in our workflow
 documentation: https://amrex-astro.github.io/workflow/
-
