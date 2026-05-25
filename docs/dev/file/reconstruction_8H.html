@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
@@ -5,23 +7,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File reconstruction.H &mdash; Castro  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=2e394b92" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=e375baa2" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-        <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=eaa7b67c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -72,6 +71,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../regridding.html">Regridding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../visualization.html">Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../performance.html">Performance Tips</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Castro reference</span></p>
 <ul>
@@ -106,9 +106,9 @@
 <li class="toctree-l2"><a class="reference internal" href="Castro__gravity_8H.html">File Castro_gravity.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Castro__hydro_8H.html">File Castro_hydro.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Castro__io_8H.html">File Castro_io.H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Castro__math_8H.html">File Castro_math.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Castro__mhd_8H.html">File Castro_mhd.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Castro__react_8H.html">File Castro_react.H</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Castro__react__util_8H.html">File Castro_react_util.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Castro__rotation_8H.html">File Castro_rotation.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Castro__sdc_8H.html">File Castro_sdc.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Castro__sdc__util_8H.html">File Castro_sdc_util.H</a></li>
@@ -149,7 +149,6 @@
 <li class="toctree-l2"><a class="reference internal" href="fourth__center__average_8H.html">File fourth_center_average.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="global_8H.html">File global.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hybrid_8H.html">File hybrid.H</a></li>
-<li class="toctree-l2"><a class="reference internal" href="math_8H.html">File math.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mhd__eigen_8H.html">File mhd_eigen.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mhd__sizes_8H.html">File mhd_sizes.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mhd__util_8H.html">File mhd_util.H</a></li>
@@ -169,7 +168,7 @@
 <li class="toctree-l2"><a class="reference internal" href="rad__util_8H.html">File rad_util.H</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">File reconstruction.H</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#_CPPv414reconstruction"><code class="docutils literal notranslate"><span class="pre">reconstruction</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N14reconstruction13slope_indicesE"><code class="docutils literal notranslate"><span class="pre">reconstruction::slope_indices</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N14reconstruction13slope_indicesE"><code class="docutils literal notranslate"><span class="pre">slope_indices</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -181,15 +180,18 @@
 <li class="toctree-l2"><a class="reference internal" href="runtime__parameters_8H.html">File runtime_parameters.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sdc__cons__to__burn_8H.html">File sdc_cons_to_burn.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sdc__newton__solve_8H.html">File sdc_newton_solve.H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sdc__powell__solve_8H.html">File sdc_powell_solve.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sdc__react__util_8H.html">File sdc_react_util.H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sdc__vode__solve_8H.html">File sdc_vode_solve.H</a></li>
 <li class="toctree-l2"><a class="reference internal" href="slope_8H.html">File slope.H</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vode__rhs__true__sdc_8H.html">File vode_rhs_true_sdc.H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timestep_8H.html">File timestep.H</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../classlist.html">Class list</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../zreferences.html">References</a></li>
 </ul>
 
@@ -224,12 +226,27 @@
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp">
-<span class="target" id="reconstruction_8H_1a841266d8d5c581e349eb06e492e806d0"></span><span class="sig-name descname"><span class="pre">AMREX_GPU_HOST_DEVICE</span> <span class="pre">AMREX_FORCE_INLINE</span> <span class="pre">void</span> <span class="pre">load_stencil</span> <span class="pre">(Array4&lt;</span> <span class="pre">Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;q_arr,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">idir,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">i,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">k,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">ncomp,</span> <span class="pre">Real</span> <span class="pre">*s)</span></span></dt>
+<span class="target" id="reconstruction_8H_1a6bbed10ae602f25beba80dad617eb7e6"></span><span class="sig-name descname"><span class="pre">AMREX_GPU_HOST_DEVICE</span> <span class="pre">AMREX_FORCE_INLINE</span> <span class="pre">void</span> <span class="pre">load_stencil</span> <span class="pre">(amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;q_arr,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">idir,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">i,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">k,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">ncomp,</span> <span class="pre">amrex::Real</span> <span class="pre">*s)</span></span></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp">
-<span class="target" id="reconstruction_8H_1a742afe4ab00bf0a79d8f341fc051c9ff"></span><span class="sig-name descname"><span class="pre">AMREX_GPU_HOST_DEVICE</span> <span class="pre">AMREX_FORCE_INLINE</span> <span class="pre">void</span> <span class="pre">load_passive_stencil</span> <span class="pre">(Array4&lt;</span> <span class="pre">Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;U_arr,</span> <span class="pre">Array4&lt;</span> <span class="pre">Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;rho_inv_arr,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">idir,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">i,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">k,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">ncomp,</span> <span class="pre">Real</span> <span class="pre">*s)</span></span></dt>
+<span class="target" id="reconstruction_8H_1a9284792197be5106cf1e08e4abeca3a1"></span><span class="sig-name descname"><span class="pre">AMREX_GPU_HOST_DEVICE</span> <span class="pre">AMREX_FORCE_INLINE</span> <span class="pre">void</span> <span class="pre">load_passive_stencil</span> <span class="pre">(amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;U_arr,</span> <span class="pre">amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;rho_inv_arr,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">idir,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">i,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">k,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">ncomp,</span> <span class="pre">amrex::Real</span> <span class="pre">*s)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="reconstruction_8H_1a2f2fe903522500b45fb6e2ee8e07d4c3"></span><span class="sig-name descname"><span class="pre">AMREX_GPU_HOST_DEVICE</span> <span class="pre">AMREX_FORCE_INLINE</span> <span class="pre">void</span> <span class="pre">add_geometric_rho_source</span> <span class="pre">(amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;q_arr,</span> <span class="pre">amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;dloga,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">i,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">k,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">ncomp,</span> <span class="pre">amrex::Real</span> <span class="pre">*s)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="reconstruction_8H_1ac9dc711d1511ec779742e599e1f5e7e7"></span><span class="sig-name descname"><span class="pre">AMREX_GPU_HOST_DEVICE</span> <span class="pre">AMREX_FORCE_INLINE</span> <span class="pre">void</span> <span class="pre">add_geometric_rhoe_source</span> <span class="pre">(amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;q_arr,</span> <span class="pre">amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;dloga,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">i,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">k,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">ncomp,</span> <span class="pre">amrex::Real</span> <span class="pre">*s)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="reconstruction_8H_1a8a0362735162b9a46c1e3854f27f7cb9"></span><span class="sig-name descname"><span class="pre">AMREX_GPU_HOST_DEVICE</span> <span class="pre">AMREX_FORCE_INLINE</span> <span class="pre">void</span> <span class="pre">add_geometric_p_source</span> <span class="pre">(amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;q_arr,</span> <span class="pre">amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;qaux_arr,</span> <span class="pre">amrex::Array4&lt;</span> <span class="pre">amrex::Real</span> <span class="pre">const</span> <span class="pre">&gt;</span> <span class="pre">const</span> <span class="pre">&amp;dloga,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">i,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">k,</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">ncomp,</span> <span class="pre">amrex::Real</span> <span class="pre">*s)</span></span></dt>
 <dd></dd></dl>
 
 </div>
@@ -240,36 +257,36 @@
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
 <dl class="cpp enum">
 <dt class="sig sig-object cpp" id="_CPPv4N14reconstruction13slope_indicesE">
-<span id="_CPPv3N14reconstruction13slope_indicesE"></span><span id="_CPPv2N14reconstruction13slope_indicesE"></span><span class="target" id="namespacereconstruction_1ae799d55542bb38126fa7aa45ca4f21da"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">slope_indices</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indicesE" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N14reconstruction13slope_indicesE"></span><span id="_CPPv2N14reconstruction13slope_indicesE"></span><span class="target" id="namespacereconstruction_1acd9e564623d8855efa267647ae0208e6"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">slope_indices</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indicesE" title="Link to this definition"></a><br /></dt>
 <dd><p><em>Values:</em></p>
 <dl class="cpp enumerator">
 <dt class="sig sig-object cpp" id="_CPPv4N14reconstruction13slope_indices3im2E">
-<span id="_CPPv3N14reconstruction13slope_indices3im2E"></span><span id="_CPPv2N14reconstruction13slope_indices3im2E"></span><span class="target" id="namespacereconstruction_1ae799d55542bb38126fa7aa45ca4f21daa89aa784c1794f52f2c76cb9c8b8ed0f5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">im2</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices3im2E" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N14reconstruction13slope_indices3im2E"></span><span id="_CPPv2N14reconstruction13slope_indices3im2E"></span><span class="target" id="namespacereconstruction_1acd9e564623d8855efa267647ae0208e6a89aa784c1794f52f2c76cb9c8b8ed0f5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">im2</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices3im2E" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp enumerator">
 <dt class="sig sig-object cpp" id="_CPPv4N14reconstruction13slope_indices3im1E">
-<span id="_CPPv3N14reconstruction13slope_indices3im1E"></span><span id="_CPPv2N14reconstruction13slope_indices3im1E"></span><span class="target" id="namespacereconstruction_1ae799d55542bb38126fa7aa45ca4f21daabf922ec17c7b8f494a4aab0e49087285"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">im1</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices3im1E" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N14reconstruction13slope_indices3im1E"></span><span id="_CPPv2N14reconstruction13slope_indices3im1E"></span><span class="target" id="namespacereconstruction_1acd9e564623d8855efa267647ae0208e6abf922ec17c7b8f494a4aab0e49087285"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">im1</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices3im1E" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp enumerator">
 <dt class="sig sig-object cpp" id="_CPPv4N14reconstruction13slope_indices2i0E">
-<span id="_CPPv3N14reconstruction13slope_indices2i0E"></span><span id="_CPPv2N14reconstruction13slope_indices2i0E"></span><span class="target" id="namespacereconstruction_1ae799d55542bb38126fa7aa45ca4f21daa3616b434e2a0fc8b3abd461aea70e548"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">i0</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices2i0E" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N14reconstruction13slope_indices2i0E"></span><span id="_CPPv2N14reconstruction13slope_indices2i0E"></span><span class="target" id="namespacereconstruction_1acd9e564623d8855efa267647ae0208e6a3616b434e2a0fc8b3abd461aea70e548"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">i0</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices2i0E" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp enumerator">
 <dt class="sig sig-object cpp" id="_CPPv4N14reconstruction13slope_indices3ip1E">
-<span id="_CPPv3N14reconstruction13slope_indices3ip1E"></span><span id="_CPPv2N14reconstruction13slope_indices3ip1E"></span><span class="target" id="namespacereconstruction_1ae799d55542bb38126fa7aa45ca4f21daa6f6fd81309632e7c05bc37419b53278c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ip1</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices3ip1E" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N14reconstruction13slope_indices3ip1E"></span><span id="_CPPv2N14reconstruction13slope_indices3ip1E"></span><span class="target" id="namespacereconstruction_1acd9e564623d8855efa267647ae0208e6a6f6fd81309632e7c05bc37419b53278c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ip1</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices3ip1E" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp enumerator">
 <dt class="sig sig-object cpp" id="_CPPv4N14reconstruction13slope_indices3ip2E">
-<span id="_CPPv3N14reconstruction13slope_indices3ip2E"></span><span id="_CPPv2N14reconstruction13slope_indices3ip2E"></span><span class="target" id="namespacereconstruction_1ae799d55542bb38126fa7aa45ca4f21daaa6bc956475a08299c445f107b52c1d88"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ip2</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices3ip2E" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N14reconstruction13slope_indices3ip2E"></span><span id="_CPPv2N14reconstruction13slope_indices3ip2E"></span><span class="target" id="namespacereconstruction_1acd9e564623d8855efa267647ae0208e6aa6bc956475a08299c445f107b52c1d88"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ip2</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices3ip2E" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp enumerator">
 <dt class="sig sig-object cpp" id="_CPPv4N14reconstruction13slope_indices4nslpE">
-<span id="_CPPv3N14reconstruction13slope_indices4nslpE"></span><span id="_CPPv2N14reconstruction13slope_indices4nslpE"></span><span class="target" id="namespacereconstruction_1ae799d55542bb38126fa7aa45ca4f21daaa8ebb9bf0b0637857bca675baf8e6372"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nslp</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices4nslpE" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N14reconstruction13slope_indices4nslpE"></span><span id="_CPPv2N14reconstruction13slope_indices4nslpE"></span><span class="target" id="namespacereconstruction_1acd9e564623d8855efa267647ae0208e6aa8ebb9bf0b0637857bca675baf8e6372"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nslp</span></span></span><a class="headerlink" href="#_CPPv4N14reconstruction13slope_indices4nslpE" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 </dd></dl>
